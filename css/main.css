@@ -1,0 +1,94 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Varela+Round:400");
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One:400");
+
+
+/* DISCLAIMER - THIS WAS MADE BY LOOKING OVER THE CODE OF https://www.powit.xyz/ AND I USED IT TO SERVE AS PRACTISE AND HOW CSS WORKS TO MAKE THE THINGS I WANT AND LIKE*/
+
+/* Variables */
+:root{
+    --orange-gradient: linear-gradient(to right,#ffdc51, #d15e00);
+    --orange-shadow: 2px 2px 15px rgba(213, 129, 50, 0.3);
+    --heading:rgb(206, 86, 0, 0.4);
+    --paragraph: rgba(15, 43, 64, 0.4);
+    --spotify-green: #1db954;
+    --spotify-black: #191414;
+}
+
+/* Reset browser */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: "Varela Round";
+    letter-spacing: 0.50px;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-wrapper{
+    text-align: center;
+}
+
+.header-wrapper h1{
+    color: var(--spotify-black);
+    font-family: "Fredoka One";
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.header-wrapper p{
+    color: var(--paragraph);
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.button{
+    color: white;
+    background: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 10%;
+    border-radius: 1000px;
+    margin: 10px 0;
+}
+
+.header-wrapper .button{
+    background: var(--orange-gradient);
+}
+
+#spotify-btn{
+    font-weight: normal;
+    color: var(--spotify-green);
+    background: transparent;
+    border: 1px solid var(--spotify-green);
+    box-shadow: none;
+}
+
+.header-wrapper .vertical-button-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 380px;
+}
