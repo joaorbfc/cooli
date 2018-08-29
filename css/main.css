@@ -1,21 +1,22 @@
 /* Fonts */
+
 @import url("https://fonts.googleapis.com/css?family=Varela+Round:400");
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One:400");
-
-
 /* DISCLAIMER - THIS WAS MADE BY LOOKING OVER THE CODE OF https://www.powit.xyz/ AND I USED IT TO SERVE AS PRACTICE AND HOW CSS WORKS TO MAKE THE THINGS I WANT AND LIKE*/
 
 /* Variables */
-:root{
-    --orange-gradient: linear-gradient(to right,#ffdc51, #d15e00);
+
+:root {
+    --orange-gradient: linear-gradient(to right, #ffdc51, #d15e00);
     --orange-shadow: 2px 2px 15px rgba(213, 129, 50, 0.3);
-    --heading:rgb(206, 86, 0, 0.4);
+    --heading: rgb(206, 86, 0, 0.4);
     --paragraph: rgba(15, 43, 64, 0.4);
     --spotify-green: #1db954;
     --spotify-black: #191414;
 }
 
 /* Reset browser */
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +29,7 @@ html {
     height: 100%;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -38,7 +39,7 @@ body {
     background: white;
 }
 
-.background{
+.background {
     width: 100%;
     height: 100vh;
     flex: 1;
@@ -47,25 +48,25 @@ body {
     justify-content: center;
 }
 
-.header-wrapper{
+.header-wrapper {
     text-align: center;
 }
 
-.header-wrapper h1{
+.header-wrapper h1 {
     color: var(--spotify-black);
     font-family: "Fredoka One";
     font-size: 64px;
     margin-bottom: 15px;
 }
 
-.header-wrapper p{
+.header-wrapper p {
     color: var(--paragraph);
     font-size: 24px;
     font-weight: normal;
     margin-bottom: 50px;
 }
 
-.button{
+.button {
     color: white;
     background: black;
     font-size: 20px;
@@ -73,13 +74,23 @@ body {
     padding: 15px 10%;
     border-radius: 1000px;
     margin: 10px 0;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
 }
 
-.header-wrapper .button{
+.button:hover {
+    opacity: 0.65;
+}
+
+.header-wrapper .button {
     background: var(--orange-gradient);
 }
 
-#spotify-btn{
+#spotify-btn {
     font-weight: normal;
     color: var(--spotify-green);
     background: transparent;
@@ -87,7 +98,7 @@ body {
     box-shadow: none;
 }
 
-.header-wrapper .vertical-button-wrapper{
+.header-wrapper .vertical-button-wrapper {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
